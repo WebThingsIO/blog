@@ -1,0 +1,10 @@
+.card {
+  width: 270px;
+  height: 350px;
+  margin: 10px 0;
+}
+
+.card > a {
+  width: 270px;
+  height: 141px;
+}

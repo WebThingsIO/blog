@@ -1,0 +1,25 @@
+{
+  "name": "webthings-blog",
+  "version": "1.0.0",
+  "description": "WebThings Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "BLOG_ENV=development npx @11ty/eleventy",
+    "build:production": "BLOG_ENV=production npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebThingsIO/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/WebThingsIO/blog/issues"
+  },
+  "homepage": "https://webthings.io/blog",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

@@ -1,0 +1,93 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebThings Blog</title>
+    <link rel="canonical" href="https://webthings.io/blog">
+    <link rel="icon" href="/images/icon.svg" />
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+    <link rel="stylesheet" media="(max-width: 959px)" href="/css/site-mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/blog.css" />
+    <link rel="stylesheet" media="(max-width: 959px)" href="/css/site-mobile.css" />
+    <link rel="stylesheet" media="(max-width: 959px)" href="css/blog-mobile.css" />
+    <meta name="description" content="Building the Web of Things" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@WebThingsIO" />
+    <meta property="og:title" content="WebThings Blog" />
+    <meta property="og:description" content="Building the Web of Things" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webthings.io/blog" />
+    <meta property="og:image" content="https://webthings.io/images/banner.png" />
+    <script src="/js/site.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <button id="menu-button"></button>
+      <a href="/">
+        <img id="wordmark" src="/images/webthings_wordmark-light.svg" alt="WebThings" />
+      </a>
+      <nav id="main-navigation">
+        <ul id="main-navigation-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/blog" class="selected">Blog</a></li>
+          <li><a href="/docs">Docs</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+          <h1><strong>WebThings</strong> Blog</h1>
+          <p>Building the Web of Things</p>
+      </section>
+
+      <section id="posts">
+        {%- for post in collections.post reversed -%}
+
+        <div class="card">
+            {% if post.data.featuredImage %}
+            <a href="{{ post.data.permalink }}" style="background-image: url(images/{{post.data.featuredImage}});">
+            </a>
+            {% else %}
+            <a href="{{ post.data.permalink }}" style="background-image: url(https://webthings.io/images/banner.png);">
+            </a>
+            {% endif %}
+            <h1><a href="{{ post.data.permalink }}">{{ post.data.title }}</a></h1>
+            <p class="slug">{{ post.data.slug }}</p>
+            <p class="date">{{ post.data.date | readableDate }}</p>
+          </div>
+        {%- endfor -%}
+      </section>
+    </main>
+
+    <footer>
+      <a href="/">
+        <img id="footer-wordmark" src="/images/webthings_wordmark-light.svg" />
+      </a>
+      <nav id="footer-navigation">
+        <ul id="footer-navigation-list">
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/legal">Legal</a></li>
+          <li><a href="mailto:team@webthings.io">Contact</a></li>
+        </ul>
+      </nav>
+      <nav id="social">
+        <a id="twitter-icon" href="https://twitter.com/WebThingsIO"></a>
+        <a id="github-icon" href="https://github.com/WebThingsIO"></a>
+      </nav>
+      <p id="smallprint">
+        WebThings is sponsored by <a href="https://krellian.com">Krellian Ltd.</a> and is no longer affiliated with the <a href="https://mozilla.com">Mozilla Corporation</a>.
+        <br>&quot;WebThings&quot; is a <a href="/legal/trademark">trademark</a> of Krellian Ltd.
+      </p>
+    </footer>
+
+  </body>
+
+</html>
