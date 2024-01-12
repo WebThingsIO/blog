@@ -5,7 +5,7 @@ slug: "The WebThings community are delighted to announce the release of WebThing
 date: 2023-01-05
 author: "Ben Francis"
 authorUrl: "https://tola.me.uk"
-permalink: "2023/01/05/webthings-gateway-1.1"
+permalink: "2023/01/05/webthings-gateway-1.1/"
 tags: post
 featuredImage: "webthings_gateway_banner.png"
 ---

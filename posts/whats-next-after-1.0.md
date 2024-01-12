@@ -5,7 +5,7 @@ slug: "It’s been a while since WebThings flew the nest from Mozilla, so I want
 date: 2022-03-03
 author: "Ben Francis"
 authorUrl: "https://tola.me.uk"
-permalink: "2022/03/03/whats-next-after-1.0"
+permalink: "2022/03/03/whats-next-after-1.0/"
 tags: post
 featuredImage: "webthings_banner.png"
 ---

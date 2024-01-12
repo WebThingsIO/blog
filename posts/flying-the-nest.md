@@ -5,7 +5,7 @@ slug: "After four years of incubation at Mozilla, we are excited to announce the
 date: 2020-12-03
 author: "Ben Francis"
 authorUrl: "https://tola.me.uk"
-permalink: "2020/12/03/flying-the-nest"
+permalink: "2020/12/03/flying-the-nest/"
 tags: post
 featuredImage: "floorplan.png"
 ---
