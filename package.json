@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "BLOG_ENV=development npx @11ty/eleventy",
-    "build:production": "BLOG_ENV=production npx @11ty/eleventy"
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "NODE_ENV=production npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",

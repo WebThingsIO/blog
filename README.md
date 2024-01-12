@@ -15,8 +15,12 @@ To run a local copy of the blog.
 
 To start up a local hot-loading local web server:
 
-`$ npx @11ty/eleventy --serve`
+`$ npm run serve`
 
 Open http://localhost:8080/ to view the local copy of the blog.
+
+To build a static HTML site for production:
+
+`$ npm run build`
 
 **⚠️ Warning:** Site-wide assets from webthings.io (css, js, images and fonts) are duplicated in the `root/` directory in this repo for the purposes of viewing the blog standalone during development, but the real root assets are used in production. Any updates to the site-wide assets need to be synchronised between this repo and the [main site repo](https://github.com/WebThingsIO/webthingsio.github.io/).

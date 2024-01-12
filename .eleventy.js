@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"images": "images"});
 
   // Use a duplicate of site-wide assets for standalone viewing in development
-  if (process.env.BLOG_ENV != 'production') {
+  if (process.env.NODE_ENV != 'production') {
     // Copy `css/` to `_site/css`, merge with blog css
     eleventyConfig.addPassthroughCopy({"root/css": "css"});
 
