@@ -5,7 +5,7 @@ slug: "The WebThings community are very excited to announce the WebThings Gatewa
 date: 2025-12-19
 author: "Ben Francis"
 authorUrl: "https://tola.me.uk"
-permalink: "2025/12/19/webthings-gateway-2.0"
+permalink: "2025/12/19/webthings-gateway-2.0/"
 tags: post
 featuredImage: "webthings_gateway_2.0_banner.png"
 ---
