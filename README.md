@@ -17,7 +17,7 @@ To start up a local hot-loading local web server:
 
 `$ npm run serve`
 
-Open http://localhost:8080/ to view the local copy of the blog.
+Open http://localhost:8001/ to view the local copy of the blog.
 
 To build a static HTML site for production:
 
